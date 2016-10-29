@@ -94,7 +94,7 @@ img.blockicon {
 .gu-mirror {
   margin: 10px;
   /*padding: 10px;*/
-  background-color: rgba(0, 0, 0, 0.2);
+  /*background-color: rgba(0, 0, 0, 0.2);*/
   transition: opacity 0.4s ease-in-out;
 }
 .container > div {
@@ -133,3 +133,44 @@ img.blockicon {
   height:16px;
   cursor:pointer;
 }
+.chapter{
+  background-color: #ee1100;
+}
+.markers{
+  background-color: #ff3311;
+}
+.mcq{
+  background-color: #ff4422;
+}
+.textimg{
+  background-color: #ff9933;
+}
+.video{
+  background-color: #ccbb33;
+}
+.maq{
+  background-color: #aacc22;
+}
+.checklist{
+  background-color: #69d025;
+}
+.matching{
+  background-color: #22ccaa;
+}
+.steps{
+  background-color: #12bdb9;
+}
+.tabs{
+  background-color: #11aabb;
+}
+.slider{
+  background-color: #4444dd;
+}
+.slideshow{
+  background-color: #3311bb;
+}
+.process{
+  background-color: #3b0cbd;
+}
+ 
+

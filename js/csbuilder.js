@@ -1,20 +1,31 @@
 
 // CONSTRUCTION TIME AGAIN
 
+// add all the templateblocks!
+
+
 // sew on buttons
 document.getElementById('expbut').addEventListener("click", savelist);
 document.getElementById('savebut').addEventListener("click", savelist);
 //document.getElementById('loadbut').addEventListener("click", getlist);
 $("#cancel").click(cancel);
 // populate leftlist
-var setlist = getSetList();
-$("#setselectcontainer").append(setlist);
+//var setlist = getSetList();
+//$("#setselectcontainer").append(setlist);
 
 // set upp chooser
 $('#chooser').chosen({ width: "90%" });
 $('#chooser').chosen().change(loaddoc);
 initchooser();
 getlist();
+
+// load templates
+   
+  for (ix in giantblocklist) {
+    var mydiv = createTemplateBlock(giantblocklist[ix]);
+    $(mydiv).appendTo('#leftie');
+  }
+
 
 dragula([document.getElementById('leftie'), document.getElementById('rightie')], {
   copy: function (el, source) {
@@ -36,7 +47,7 @@ dragula([document.getElementById('leftie'), document.getElementById('rightie')],
 
 // TOP SECRET FUNCTIONS 
 
-function loadset() {
+function loadset() { // not used anymore
   // clear leftie first
   $("#leftie").empty();
   var s = $("#setselector option:selected").text();
