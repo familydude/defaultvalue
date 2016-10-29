@@ -13,6 +13,7 @@ $("#setselectcontainer").append(setlist);
 // set upp chooser
 $('#chooser').chosen({ width: "90%" });
 $('#chooser').chosen().change(loaddoc);
+initchooser();
 
 dragula([document.getElementById('leftie'), document.getElementById('rightie')], {
   copy: function (el, source) {
@@ -93,7 +94,7 @@ function getlist() {
   });
 }
 function updateAndShowProjects(msg) {
-  $("#chooser").empty();
+  initchooser();
   $("#innerdiv").removeClass("hidden");
   $("#spinner").addClass("hidden");
   var mylist = JSON.parse(msg);
@@ -107,8 +108,12 @@ function updateAndShowProjects(msg) {
 }
 // there is no callback yet!!!
 
-function testchoice(msg) {
-  alert();
+function initchooser() {
+  $("#chooser").empty();
+  var d = document.createElement("option");
+   $(d).text("Välj någonting...");
+  $("#chooser").append(d);
+  $("#chooser").trigger("chosen:updated");
 }
 
 function loaddoc(n) {
