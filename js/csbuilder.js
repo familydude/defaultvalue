@@ -4,7 +4,7 @@
 // sew on buttons
 document.getElementById('expbut').addEventListener("click", savelist);
 document.getElementById('savebut').addEventListener("click", savelist);
-document.getElementById('loadbut').addEventListener("click", getlist);
+//document.getElementById('loadbut').addEventListener("click", getlist);
 $("#cancel").click(cancel);
 // populate leftlist
 var setlist = getSetList();
@@ -14,6 +14,7 @@ $("#setselectcontainer").append(setlist);
 $('#chooser').chosen({ width: "90%" });
 $('#chooser').chosen().change(loaddoc);
 initchooser();
+getlist();
 
 dragula([document.getElementById('leftie'), document.getElementById('rightie')], {
   copy: function (el, source) {
