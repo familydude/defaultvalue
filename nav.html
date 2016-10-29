@@ -1,0 +1,145 @@
+<HTML>
+	
+<head>
+<meta charset="UTF-8">
+<title>whaat</title>
+<link rel="stylesheet" type="text/css" href="css/nav.css" />
+<link rel="stylesheet" type="text/css" href="css/chosen.css" />
+<link href='js/dragula.css' rel='stylesheet' type='text/css' />
+</head>
+<body>
+  
+  
+<div class="page-wrapper">
+  <div id="outer-leftie" class="left-column">
+		<div id="setselectcontainer" class="chooserdiv">
+    <!--<select>
+      <option>EME 2016</option>
+    </select>-->
+		</div>
+  <div id="leftie" class="  container">
+  <!--
+      <div class="templateblock chapter frame">
+      	<img class="blockicon" src="img/bookmark-for-favorites.png" />
+      	<div class="textdiv"><span class="blockheading">Chapter</span><br>
+      		<span class="blocksubheading">Structural component</span>
+      	</div>
+      </div>
+      <div class="templateblock marker frame">
+      	<img class="blockicon" src="img/map-filled-with-a-placeholder.png" />
+      	<div class="textdiv"><span class="blockheading">Markers</span><br>
+      		<span class="blocksubheading">Exploration component</span>
+      	</div>
+      </div>
+      <div class="templateblock mcq frame">
+      	<img class="blockicon" src="img/question1.png" />
+      	<div class="textdiv"><span class="blockheading">Multiple Choice Question</span><br>
+      		<span class="blocksubheading">Reflective component</span>
+      	</div>
+      </div>
+      <div class="templateblock textbild frame">
+      	<img class="blockicon" src="img/imgtxt.png" /> 
+      	<div class="textdiv"><span class="blockheading">Image/Text</span><br>
+      		<span class="blocksubheading">Presentation component</span>
+      	</div>
+      </div>
+      <div class="templateblock video frame">
+      	<img class="blockicon" src="img/triangular-black-right-arrow.png" /> 
+      	<div class="textdiv"><span class="blockheading">Video</span><br>
+      		<span class="blocksubheading">Presentation component</span>
+      	</div>
+      </div>  
+      <div class="templateblock video frame">
+      	<img class="blockicon" src="img/checked-box.png" /> 
+      	<div class="textdiv"><span class="blockheading">Multiple Answer</span><br>
+      		<span class="blocksubheading">Presentation component</span>
+      	</div>
+      </div> 
+      <div class="templateblock video frame">
+      	<img class="blockicon" src="img/checked-filled-list.png" /> 
+      	<div class="textdiv"><span class="blockheading">Checklist</span><br>
+      		<span class="blocksubheading">Exploration component</span>
+      	</div>
+      </div> 
+            <div class="templateblock video frame">
+      	<img class="blockicon" src="img/two-straight-arrows-square-shape-of-exchange.png" /> 
+      	<div class="textdiv"><span class="blockheading">Matching</span><br>
+      		<span class="blocksubheading">Quiz component</span>
+      	</div>
+      </div> 
+            <div class="templateblock video frame">
+      	<img class="blockicon" src="img/footprint.png" /> 
+      	<div class="textdiv"><span class="blockheading">Steps</span><br>
+      		<span class="blocksubheading">Exploration component</span>
+      	</div>
+      </div> 
+      <div class="templateblock video frame">
+      	<img class="blockicon" src="img/folder-filled-with-tabs.png" /> 
+      	<div class="textdiv"><span class="blockheading">Tabs</span><br>
+      		<span class="blocksubheading">Presentation component</span>
+      	</div>
+      </div> 
+      <div class="templateblock video frame">
+      	<img class="blockicon" src="img/switch-at-center.png" /> 
+      	<div class="textdiv"><span class="blockheading">Slider</span><br>
+      		<span class="blocksubheading">Exploration component</span>
+      	</div>
+      </div> 
+      <div class="templateblock video frame">
+      	<img class="blockicon" src="img/cascade-rectangular-rellena.png" /> 
+      	<div class="textdiv"><span class="blockheading">Slideshow</span><br>
+      		<span class="blocksubheading">Presentation component</span>
+      	</div>
+      </div> 
+      <div class="templateblock video frame">
+      	<img class="blockicon" src="img/numbered-items-button.png" /> 
+      	<div class="textdiv"><span class="blockheading">Process</span><br>
+      		<span class="blocksubheading">Presentation component</span>
+      	</div>
+      </div> 
+      -->
+
+  </div>
+</div>
+  <div id="outer-rightie" class="right-column">
+  
+    <div class="pagehead" style="overflow: hidden;">
+      <span id="doctitle" contenteditable="true">Document Title</span>
+       
+      <button id="savebut" class="butt">Save</button>
+      <button id="loadbut" class="butt">Load </button>
+      <button id="expbut" class="butt" >Export </button>
+    </div>
+ 
+  
+    <div id="rightie" class="container">
+      This is the content.
+    </div>
+  </div>
+  <div class=" hidden dialog ">
+	  <img id="cancel" src="img/Cancel-52.png"   style="float:right"/>
+  	<div id="innerloader">
+  		<p class="loadingmsg centered">Loading...</p>
+  		<div id="spinner" class='anim centered '>
+				<img src="img/balls.svg" />  
+  		</div>
+			</div>
+			<div id="innerdiv" class="chooserdiv hidden">
+				 
+					<select id="chooser" class="centered chosen-select" single data-placeholder="Välj någonting -" >
+				  
+				<option> </option>
+				<option>Arne</option>
+				<option>Bengt</option>
+				<option>Cyrus</option>
+			</select>
+  	
+    </div>
+</div>
+  <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+ <script src="js/chosen.jquery.js" type="text/javascript"></script>
+<script src='js/dragula.js'></script>
+<script src='js/blocks.js'></script>
+<script src='js/csbuilder.js'></script>
+ <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+</body>
