@@ -94,9 +94,11 @@ var giantblocklist =[
 
 var allSets = [
 	{"Getinge":[2,3,5]},
-	{"EME 2016 SV":[1,2,3,4,5]}
+	{"EME 2016 SV":[1,2,3,4,5,6,7,8,9,10,11,12,13]}
 	];
 
+ 
+// deprecated
 function getBlockCodeList(set){
 	for (var i =0;i<allSets.length;i++){
 		currentkey = Object.keys(allSets[i])[0];
