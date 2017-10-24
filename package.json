@@ -1,0 +1,36 @@
+{
+  "name": "defaultvalue",
+  "version": "1.0.0",
+  "description": "A single page web app utility for building scripts for elearning.",
+  "main": "index.js",
+  "scripts": {
+    "test": "testus",
+    "build-css": "stylus source/stylesheets/index.styl -o static/css",
+    "watch-css": "stylus source/stylesheets/index.styl -o static/css -w",
+    "clean": "rm -rf static/css && mkdir -p static/css",
+    "build": "npm run clean && npm run build-css",
+    "watch": "npm run clean && npm run watch-css & nodemon server -e js,jade",
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/familydude/defaultvalue.git"
+  },
+  "keywords": [
+    "node",
+    "webapp",
+    "scriptbuilding"
+  ],
+  "author": "Christian Stenevi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/familydude/defaultvalue/issues"
+  },
+  "homepage": "https://github.com/familydude/defaultvalue#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "jade": "^1.11.0",
+    "morgan": "^1.9.0",
+    "stylus": "^0.54.5"
+  }
+}

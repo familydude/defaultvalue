@@ -1,0 +1,29 @@
+doctype html
+html(lang="sv")
+  head
+    title=defaultvalue
+    link(rel="stylesheet", type="text/css", href="css/nav.css")
+    link(rel="stylesheet", type="text/css", href="css/chosen.css")
+    link(href='css/dragula.css', rel='stylesheet', type='text/css')
+  body
+    div.page-wrapper
+       div#outer-leftie.left-column
+         div
+           select#chooser.centered.chosen-select(single, data-placeholder="Välj något")
+             option
+               | EME Svenska 
+               | EME Engelska
+         div#leftie.container
+       div#outer-rightie.right-column
+         div.pagehead(style="overflow:hidden;")
+           span#doctitle(contenteditable="true")
+             | Document Title  
+           button#savebut.butt Save
+           button#expbut.butt Export
+         div#rightie.container
+          | Dra och släpp innehåll hit.
+  script(src="https://code.jquery.com/jquery-3.1.1.min.js")
+  script(src="js/chosen.jquery.js" type="text/javascript")
+  script(src='js/dragula.js')
+  script(src='js/blocks.js')
+  script(src='js/csbuilder.js')  

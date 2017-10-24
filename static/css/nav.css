@@ -1,0 +1,176 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans";
+}
+.hidden{ display:none;}
+
+.page-wrapper {
+  height: 100%;
+  position: relative;
+}
+
+.left-column {
+	overflow-x: scroll;
+  position:fixed;  /*<-- fixes the left panel to prevent from scrolling */
+  top:0;
+  left:0;
+  width:235px;
+  height:100%;
+  background:lightgrey;
+  padding:5px;
+}
+
+.right-column {
+  margin-left:245px;
+  background:white;
+  min-height:100%;  /* <-- fixes the background-color issue when content grows */
+}
+.pagehead {
+   
+  background:dimgrey;
+  width:100%; 
+  padding:5px;  
+}
+
+#doctitle {
+  float:left;
+  margin-right: 20px; 
+  color:white;
+}
+.butt{
+  float:right;
+}
+.buttpane{
+float:right;
+}
+
+.templateblock{
+  background: dimgray;
+  border:1px solid white;
+   color: white;
+  border-radius: 25px;
+  padding:2px;
+  padding-left:16px;
+  
+}
+select{
+  width:100%;
+  margin-bottom:10px;
+}
+.blockheading {
+	font-size:10pt;
+	}
+.blocksubheading {
+	font-size:8pt;
+	}
+ 
+.frame {
+    display: flex;
+    /*Uncomment below to center horizontally*/
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+img.blockicon {
+    height: auto;
+    margin-right:5px;
+}
+.container {
+  display: table-cell;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 50%;
+}
+.container:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/*
+ * note that styling gu-mirror directly is a bad practice because it's too generic.
+ * you're better off giving the draggable elements a unique class and styling that directly!
+ */
+.container > div,
+.gu-mirror {
+  margin: 10px;
+  /*padding: 10px;*/
+  /*background-color: rgba(0, 0, 0, 0.2);*/
+  transition: opacity 0.4s ease-in-out;
+}
+.container > div {
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+.gu-mirror {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+.dialog{
+   width: 45%;
+   height: 30%;
+   position: absolute;
+   top: 30%;
+   left: 30%;
+   background:white;
+   border:1px black solid;
+   border-radius: 4px;
+   margin-left: -70px; /*half the size of width*/
+}
+.centered{
+  text-align:center;
+}
+ 
+
+.chooserdiv {
+    text-align:center;
+    margin: auto;
+}
+#cancel {
+  width:16px;
+  height:16px;
+  cursor:pointer;
+}
+.chapter{
+  background-color: #ee1100;
+}
+.markers{
+  background-color: #ff3311;
+}
+.mcq{
+  background-color: #ff4422;
+}
+.textimg{
+  background-color: #ff9933;
+}
+.video{
+  background-color: #ccbb33;
+}
+.maq{
+  background-color: #aacc22;
+}
+.checklist{
+  background-color: #69d025;
+}
+.matching{
+  background-color: #22ccaa;
+}
+.steps{
+  background-color: #12bdb9;
+}
+.tabs{
+  background-color: #11aabb;
+}
+.slider{
+  background-color: #4444dd;
+}
+.slideshow{
+  background-color: #3311bb;
+}
+.process{
+  background-color: #3b0cbd;
+}
+ 
+
