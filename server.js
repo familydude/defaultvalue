@@ -2,10 +2,12 @@ var express = require('express')
   , logger = require('morgan')
   , app = express()
   , template = require('jade').compileFile(__dirname + '/source/templates/homepage.jade')
-
+const MongoClient = require('mongodb').MongoClient
 app.use(logger('dev'))
 app.use(express.static(__dirname + '/static'))
-
+MongoClient.connect('mongodb://apan:bananen@ds231315.mlab.com:31315/defaultvalue', (err, database) => {
+  // ... do something here
+})
 app.get('/', function (req, res, next) {
   try {
     var html = template({ title: 'Home' })
@@ -14,6 +16,7 @@ app.get('/', function (req, res, next) {
     next(e)
   }
 })
+
 app.post('/getlist', function (req, res, next) {
   try {
     var mylist = JSON.stringify(["apan","bananen","grodan"])

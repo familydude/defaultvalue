@@ -77,11 +77,11 @@ function savelist() {
 
   $.ajax({
     type: "POST",
-    url: "dbsave.php",
+    url: "/save",
     data: { name: doctitle, body: JSON.stringify(arr) },
     cache: false,
     success: function (msg) {
-      //msg2 = JSON.parse(msg);
+       
       alert(msg);
     },
     error: function (XMLHttpRequest, textStatus, errorThrown) {
@@ -95,7 +95,7 @@ function getlist() {
   $('.dialog').removeClass('hidden');
   $.ajax({
     type: "POST",
-    url: "dblist.php",
+    url: "/getlist",
     data: {},
     cache: false,
     success: updateAndShowProjects,
@@ -133,7 +133,7 @@ function loaddoc(n) {
   $('.dialog').addClass('hidden');
   $.ajax({
     type: "POST",
-    url: "dbget.php",
+    url: "/load",
     data: { namn: n },
     cache: false,
     success: loadDocumentwithJSON,
